@@ -1,7 +1,13 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
 
-def pattern_def(request):
-    return render(request, 'pattern_def.html')
+def shop(request):
+        return render(request, 'shop.html')
 
 
+def games(request):
+    return render(request, 'games.html')
+
+def basket(request):
+    return render(request, 'basket.html')
+
+# Create your views here.
