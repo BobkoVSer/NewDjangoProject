@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ИГРЫ</title>
-</head>
-<body>
-      <h1>Atomic Heart</h1>
-      <button>Купить</button>
+{% extends "forth_task/menu.html" %}
 
-      <h2>CyberPunk 2077</h2>
-      <button>Купить</button>
+{% block pagename %}
+    <h1>Игры</h1>
+{% endblock %}
 
-      <h3>PayDay</h3>
-      <button>Купить</button>
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
 
-      <button>Вернуться обратно</button>
-</body>
-</html>
+{% block content %}
+    <ul>
+        <li>Atomic Heart <button>Купить</button> </li>
+        <li> </li>
+        <li>Cyberpunkt 2077 <button>Купить</button> </li>
+        <li> </li>
+        <li>PayDay <button>Купить</button> </li>
+        <li> </li>
+    </ul>
+
+{% endblock %}
