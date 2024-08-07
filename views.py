@@ -1,13 +1,14 @@
 from django.shortcuts import render
 
-def shop(request):
-        return render(request, 'shop.html')
 
+
+# Create your views here.
+def shop(request):
+    return render(request, 'forth_task/shop.html')
 
 def games(request):
-    return render(request, 'games.html')
+    return render(request, 'forth_task/games.html')
 
 def basket(request):
-    return render(request, 'basket.html')
-
+    return render(request, 'forth_task/basket.html')
 # Create your views here.
