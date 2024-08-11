@@ -19,12 +19,20 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
 from task4.views import shop, games, basket
+from task5.views import sign_up_by_html, sign_up_by_django
+
+
+#urlpatterns = [
+    #path('admin/', admin.site.urls),
+    #path('', shop),
+    #path('games/', games),
+    #path('basket/', basket),
+
+
+#]
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', shop),
-    path('games/', games),
-    path('basket/', basket),
-
-
+    path('index5/', sign_up_by_django),
+    path('', sign_up_by_html),
 ]
